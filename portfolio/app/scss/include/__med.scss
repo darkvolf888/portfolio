@@ -1,0 +1,182 @@
+@media screen and (max-width: 1024px) {
+    .article__mywork_content {
+        .mywork__content_block {
+            height: 20vh;
+        }
+    }
+    .article__about .about__profile .about__profile_skill .profile__skill_info .profile__skill_name {
+        width: 100%;
+    }
+    .article__about .about__profile .about__profile_skill .profile__skill_info .profile__skill_text {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 991px) {
+    body {
+        &.lock{
+            position: fixed;
+        }
+    }
+    #navbarResponsive {
+        height: 100vh;
+        transition: none;
+    }
+    .navbar__menu_content {
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+    }
+    .hi {
+        .header{
+            .navbar__body {
+                .navbar__logo_text {
+                    font: 1.6em sans-serif;
+                }
+                .nav-item {
+                    padding: 0.6em 4px;
+                    font-size: 1.5em;
+                }
+                .navbar__menu {
+                    .fa-bars {
+                        font-size: 1.5em;
+                    }
+                    .fa-arrow-right {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-nav {
+        position: relative;
+        z-index: 100;
+    }
+    .bg--dark {
+        display: none;
+        &.active {
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: rgba($color: #000000, $alpha: .8);
+            z-index: 5;
+            color: #ffffff;
+        }
+    }
+    .about__info_name {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about__info_text {
+        max-width: 100%;
+    }
+    .article__about .about__info .about__info_name .info__name_text {
+        flex: none;
+    }
+    .article__about .about__info .about__info_name .info__name_texts {
+        flex: none;
+    }
+    .article__about .about__profile .about__profile_skill .profile__skill_info .profile__skill_name {
+        width: 100%;
+    }
+    .article__about .about__profile .about__profile_skill .profile__skill_info .profile__skill_text {
+        width: 100%;
+    }
+    .article__mywork_content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .maps {
+        max-width: 35vh; 
+        max-height: 230px;
+    }
+    .footer__content_arrow_box {
+        .arrow_box {
+            padding: 1px 5px;
+        }
+        .arrow__box_content {
+            padding: 7px 4px 1px;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .container-lg {
+        margin: 0px 1px;
+        padding: 0px 0px;
+    }  
+    .container-md {
+        margin: 0px 1px;
+        padding: 0px 0px;
+    }
+    .article__mywork_content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .mywork__content_block {
+            height: 33vh;
+        }
+    }
+}
+@media screen and (max-width: 580px) {
+    .article__mywork_content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        .mywork__content_block {
+            height: 40vh;
+        }
+    }
+}
+@media screen and (max-width: 404px) {
+    .wrapper {
+        overflow-x: hidden;
+    }
+    .maps {
+        overflow: hidden;
+        padding: 6px;
+    }
+    .arrow__box_content {
+        display: none;
+    }
+    .article__about .about__profile .about__profile_footer .profile_footer_icon .profile_footer_img {
+        margin: 0px 12px;
+        width: 5vh;
+        height: 5vh;
+    }
+}
+@media screen and (max-width: 320px) {
+    .article__mywork_content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        .mywork__content_block {
+            height: 24vh;
+        }
+    }
+    .article__about .about__profile .about__profile_footer .profile_footer_icon .profile_footer_img {
+        width: 3.5vh;
+        height: 3.5vh;
+    }
+}
+@media screen and (max-width: 250px) {
+    .article__mywork_content {
+        .mywork__content_block {
+            height: 16vh;
+        }
+    }
+    .button__verh {
+        .button__verh_ico {
+            font-size: .8em;
+            color: #141414;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .article__about .about__profile .about__profile_footer .profile_footer_icon .profile_footer_img {
+        width: 2vh;
+        height: 2vh;
+    }
+}

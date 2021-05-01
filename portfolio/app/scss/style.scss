@@ -1,0 +1,63 @@
+@import "include/_zero.scss";
+@import "include/_icon.scss";
+@import "include/_preloader.scss";
+@import "include/_header.scss";
+@import "include/_hi.scss";
+/* --------------------  Page --Начало--  -------------------- */
+.page {
+	padding: 60px 0px 30px 0px;
+	@media (max-width: 767px){
+		padding: 30px 0px 30px 0px;
+	}
+	.page__title {
+		padding: 2% 2px;
+		display: flex;
+		justify-content: center;
+	}
+	@import "include/_about.scss";
+	@import "include/_mywork.scss";
+	@import "include/_contact.scss";
+	@import "include/_footer.scss";
+}
+@import "include/_popup.scss";
+@import "include/_popup_info.scss";
+@import "include/_up__button.scss";
+@import "include/_begushay__stroka.scss";
+.page__footer {
+	position: relative;
+}
+.page__footer_body i {
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+	background: #ff2a2a;
+	border-radius: 100%;
+	animation: animeBg 0.4s linear infinite;
+}
+@keyframes animeBg {
+	0% {
+		transform: translateY(0)
+	}
+	10% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}	
+	100% {
+		transform: translateY(-28000%)
+	}
+}
+.page__footer_body i:nth-child(even) {
+	background: transparent;
+	border: solid 1px #ff2a2a;
+}
+/* --------------------  Page --Конец--  -------------------- */
+.anim__button {
+	position: fixed;
+	left: 12px;
+	bottom: 6%;
+	max-width: 120px;
+	width: 100%;
+	z-index: 9999999999;
+}
